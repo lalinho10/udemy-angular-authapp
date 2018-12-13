@@ -1,0 +1,17 @@
+<p>Protegida</p>
+<hr>
+<div class="row" *ngIf="profile">
+	<div class="col-sm-4">
+		<img [src]="profile.picture">
+	</div>
+	<div class="col-sm-8">
+		<ul class="list-group">
+			<li class="list-group-item">{{ profile.nickname }}</li>
+			<li class="list-group-item">{{ profile.name }}</li>
+		</ul>
+	</div>
+</div>
+<hr>
+<pre>
+	{{ profile | json }}
+</pre>
